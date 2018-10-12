@@ -1,5 +1,6 @@
 package com.mj.demo.springcloud.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.mj.demo.springcloud.entities.Dept;
@@ -38,7 +39,8 @@ public class DeptController
 	@RequestMapping(value = "/dept/list", method = RequestMethod.GET)
 	public List<Dept> list()
 	{
-		return service.list();
+		//return service.list();
+		return new ArrayList<>();
 	}
 
 	
